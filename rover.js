@@ -17,9 +17,10 @@ class Rover {
           response.results.push({
             completed: true,
             roverStatus: {
+              position: this.position,
               mode: this.mode,
               generatorWatts: this.generatorWatts,
-              position: this.position
+              
             }
           });
         } else if (command.commandType === 'MODE_CHANGE') {

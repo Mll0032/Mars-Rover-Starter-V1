@@ -9,7 +9,6 @@ describe("Command class", function() {
 //   expect(() => new Command()).toThrowError('Command type required.');
 // });
 
-//change it to test as far as I can tell it is just another form of test
 //.toThrow from jestjs.io Use .toThrow to test what that a function throws when it is called
 //new Error creates my user defined error wich now will say 'Command type required.' when there are no commands passed to the function
   test("throws error if command type is NOT passed into constructor as the first parameter", function() {
