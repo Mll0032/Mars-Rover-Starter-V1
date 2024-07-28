@@ -12,6 +12,10 @@ const Command = require('./command.js');
 // let moveCommand = new Command('MOVE', 12000);
 // console.log(moveCommand);
 
+//check to see if basic rover information is there
+// let basicRover = new Rover();
+// console.log(basicRover);
+
 //call the entire projects classes and functions to see if we get appropriate output
 let commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
 let message = new Message('Test message with two commands', commands);
