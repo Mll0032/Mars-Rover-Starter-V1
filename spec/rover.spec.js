@@ -36,6 +36,7 @@ describe("Rover class", function() {
     let message = new Message('Test message', commands);
     let rover = new Rover(98382);
     let response = rover.receiveMessage(message);
+    expect(response.results[0].completed).toBe(true);
     expect(response.results[0].roverStatus).toEqual({
       mode: 'NORMAL',
       generatorWatts: 110,

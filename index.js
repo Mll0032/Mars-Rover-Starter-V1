@@ -12,16 +12,16 @@ const Command = require('./command.js');
 // let moveCommand = new Command('MOVE', 12000);
 // console.log(moveCommand);
 
-//check to see if basic rover information is there
+// check to see if basic rover information is there
 // let basicRover = new Rover();
 // console.log(basicRover);
 
 //call the entire projects classes and functions to see if we get appropriate output
-let commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
-let message = new Message('Test message with two commands', commands);
-let rover = new Rover(98382);    // Passes 98382 as the rover's position.
-let response = rover.receiveMessage(message);
-console.log(rover)
-console.log(response);
+// let commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
+// let message = new Message('Test message with two commands', commands);
+// let rover = new Rover(98382);    // Passes 98382 as the rover's position.
+// let response = rover.receiveMessage(message);
+// console.log(rover)
+// console.log(response);
 
 
