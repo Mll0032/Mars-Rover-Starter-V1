@@ -7,19 +7,17 @@ const Command = require('./command.js');
 // console.log(commands);
 
 //check to see if command class is working
-let modeCommand = new Command('MODE_CHANGE', 'LOW_POWER');
-console.log(modeCommand);
-let moveCommand = new Command('MOVE', 12000);
-console.log(moveCommand);
+// let modeCommand = new Command('MODE_CHANGE', 'LOW_POWER');
+// console.log(modeCommand);
+// let moveCommand = new Command('MOVE', 12000);
+// console.log(moveCommand);
 
 //call the entire projects classes and functions to see if we get appropriate output
-// let commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
-// let message = new Message('Test message with two commands', commands);
-// let commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
-// let message = new Message('Test message with two commands', commands);
-// let rover = new Rover(98382);    // Passes 98382 as the rover's position.
-// let response = rover.receiveMessage(message);
-// console.log(rover)
-// console.log(response);
+let commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')];
+let message = new Message('Test message with two commands', commands);
+let rover = new Rover(98382);    // Passes 98382 as the rover's position.
+let response = rover.receiveMessage(message);
+console.log(rover)
+console.log(response);
 
 
